@@ -1,12 +1,12 @@
 document.getElementById("sub").addEventListener("click",function(){
     let img;
     let data="";
-    let report= document.getElementById("sub").value;
-    if(report==1){
+    var pythonOutput="{{output}}"
+    if(pythonOutput==1){
         data="This Site is PHISHED! Please report at ......";
         img=".Images/alert.gif";
     }
-    else if(report==0){
+    else if(pythonOutput==0){
         data="This Site is Safe! You may Proceed...";
         img=".Images/alert.gif";
     }
